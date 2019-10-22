@@ -53,6 +53,7 @@ $NDVI=\frac{(NIR - RED)}{(NIR + RED)}$, where NIR is near-infrared spectrum and 
 </table>
 
 *Below, you can see a satellite image of Manhattan in NDVI mode as well as in true color spectrum:*
+![NDVI mask](https://github.com/benetka/missing_maps_hackathon/blob/master/img/ndvi_mask.png "NDVI (vegetation) mask of Manhattan")
 
 ***2) Vegetation change tracking***
 
@@ -67,5 +68,39 @@ $I_{2\_norm} = \frac{\sigma_1}{\sigma_1}(I_2(x,y) - \nu_2)+\nu_1$,
 where $\sigma$ is mean brightness and $\nu$ is mean contrast. Find the method described at [sentinel-hub blog](https://medium.com/sentinel-hub/next-mission-automated-detection-of-land-changes-8e988dce55ff).
 
 *An example of a (quick) deforestation process captured on two NDVI snapshots converted to grayscale looks like this:*
+![Deforestation in BW](https://github.com/benetka/missing_maps_hackathon/blob/master/img/grayscale_snapshots.png "NDVI mask of two snapshots converted to grayscale.")
 
 *Image pairs like that serve as our input data to express the differences (marked below in red color):*
+![Loss of vegetation](https://github.com/benetka/missing_maps_hackathon/blob/master/img/amazon_diff.png "Loss of vegetation in Amazonia (differences marked red).")
+
+--- 
+
+# Resources
+
+
+There are tons of resources available on the topic of deforestation. We found the following especially useful:
+
+
+**Data**
+
+- All about Sentinel missions: https://sentinel.esa.int/web/sentinel/home
+- EO Browser @ Sentinel HUB: https://apps.sentinel-hub.com/eo-browser/
+
+
+**Tutorials & Blog posts**
+
+- [Land Cover Classification with eo-learn: Part 1 (by Matic Lubej
+)](https://medium.com/sentinel-hub/land-cover-classification-with-eo-learn-part-1-2471e8098195)
+- [Next mission — Automated detection of land changes (by Sinergise)](https://medium.com/sentinel-hub/next-mission-automated-detection-of-land-changes-8e988dce55ff)
+- [How to use open source satellite data for your investigative reporting (by Ben Heubl et al.)](https://towardsdatascience.com/how-to-use-open-source-satellite-data-for-your-investigative-reporting-d662cb1f9f90)
+- [EEUS2018-JupyterSession (by Tyler Erickson)](https://github.com/tylere/EEUS2018-JupyterSession)
+
+
+**Image sources**
+
+- Header image: [Nicolas Villaume @ WWF | Deforestation in Peru](https://www.worldwildlife.org/magazine/issues/fall-2015/articles/deforestation-in-peru)
+- NDVI & Photosynthesis: [John Whitmarsh and Govindjee @ Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#/media/File:Par_action_spectrum.gif)
+
+**Tools**
+
+- Image slider: https://juxtapose.knightlab.com/
